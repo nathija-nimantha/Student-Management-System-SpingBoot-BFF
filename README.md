@@ -42,7 +42,7 @@ The project also supports image handling (student profile images) and basic form
 ### Clone the Repository
 
 \`\`\`bash
-git clone https://github.com/nathija-nimantha/student-management.git
+git clone https://github.com/nathija-nimantha/Student-Management-System-SpingBoot-BFF.git
 cd student-management
 \`\`\`
 
