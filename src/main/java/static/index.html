@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Student</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-lg-4">
+                <div class="card shadow-lg border-0 rounded-lg mt-5">
+                    <div class="card-header bg-light text-white text-center">
+                        <h2 class="mb-0">Add Student Form</h2>
+                        <p class="text-muted mb-0">Enter student details</p>
+                    </div>
+                    <div class="card-body p-4">
+                        <form id="studentForm" enctype="multipart/form-data">
+                            <div class="form-floating mb-3">
+                                <input type="number" class="form-control" id="id" placeholder="ID" required>
+                                <label for="id">ID</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="name" placeholder="Name" required>
+                                <label for="name">Name</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="date" class="form-control" id="dob" placeholder="Date of Birth" required>
+                                <label for="dob">Date of Birth</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="guardianName" placeholder="Guardian Name" required>
+                                <label for="guardianName">Guardian Name</label>
+                            </div>
+                            <div class="mb-3">
+                                <label for="imageFile" class="form-label">Upload Image</label>
+                                <input type="file" class="form-control" id="imageFile" name="imageFile" accept="image/*" required>
+                            </div>
+                            <div class="form-floating mb-4">
+                                <input type="text" class="form-control" id="crn" placeholder="CRN" required>
+                                <label for="crn">CRN</label>
+                            </div>
+                            <button type="button" id="addStudentBtn" class="btn btn-success w-80 ms-2">Submit Student</button>
+                            <button type="button" id="clearFormBtn" class="btn btn-secondary w-20 ms-2">Clear</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center mt-5">
+            <div class="col-12">
+                <h2 class="text-center">Registered Students</h2>
+                <div class="table-responsive mt-3">
+                    <table class="table table-dark table-hover text-center">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Date of Birth</th>
+                                <th>Guardian Name</th>
+                                <th>Image</th>
+                                <th>CRN</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="studentTableBody">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
