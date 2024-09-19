@@ -23,5 +23,6 @@ public class Student {
     private String guardianName;
     @Lob
     @Column(name = "image", columnDefinition = "MEDIUMBLOB")
+    private byte[] image;
     private String crn;
 }

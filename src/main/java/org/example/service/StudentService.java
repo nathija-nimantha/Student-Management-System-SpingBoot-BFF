@@ -12,5 +12,5 @@ public interface StudentService {
     void updateStudent(Student student);
     List<Student> findByName(String name);
     List<Student> findAllStudents();
-    List<Student> findStudentById(Integer id);
+    Student findStudentById(Integer id);
 }

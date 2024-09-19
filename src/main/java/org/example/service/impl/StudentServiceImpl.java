@@ -56,7 +56,7 @@ public class StudentServiceImpl implements StudentService {
     }
 
     @Override
-    public List<Student> findStudentById(Integer id) {
+    public Student findStudentById(Integer id) {
         return repository.findAllById(id);
     }
 }

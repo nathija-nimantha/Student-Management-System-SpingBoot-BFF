@@ -11,7 +11,7 @@ import java.util.List;
 
 
 @RestController
-@CrossOrigin(origins = "http://localhost:5500")
+@CrossOrigin
 @RequiredArgsConstructor
 @Slf4j
 public class StudentController {
@@ -44,5 +44,10 @@ public class StudentController {
     @PutMapping("/update-student")
     public void updateStudent(@RequestBody Student student) {
         service.updateStudent(student);
+    }
+
+    @GetMapping("/get-student/{id}")
+    public Student getStudentById(@PathVariable Integer id) {
+        return service.findStudentById(id);
     }
 }
