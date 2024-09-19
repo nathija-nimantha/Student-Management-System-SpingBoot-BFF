@@ -43,7 +43,7 @@ The project also supports image handling (student profile images) and basic form
 
 \`\`\`bash
 git clone https://github.com/nathija-nimantha/Student-Management-System-SpingBoot-BFF.git
-cd student-management
+cd student-management-system-springboot-bff
 \`\`\`
 
 ### Running the Backend
